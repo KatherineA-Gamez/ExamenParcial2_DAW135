@@ -25,26 +25,26 @@
         <div class="card">
             <p:card style="margin: 5% 5% 5% 5%">
                 <h:form id="formInscripcion">
-                    <p:outputLabel value="Estudiante:" for="estudiante" />
+                    <p:outputLabel value="Estudiante:      " for="estudiante" />
                     <p:selectOneMenu id="estudiante" value="#{inscripcionController.idAlumno}">
                         <f:selectItems value="#{inscripcionController.listaEstudiantes}" var="alumno"
                                        itemLabel="#{alumno.nombre}" itemValue="#{alumno.id}" />
                     </p:selectOneMenu>
 
-                    <p:outputLabel value="Materia:" for="materia" />
+                    <p:outputLabel value="    Materia:    " for="materia" />
                     <p:selectOneMenu id="materia" value="#{inscripcionController.idMateria}">
                         <f:selectItems value="#{inscripcionController.listaMaterias}" var="materia"
                                        itemLabel="#{materia.nombreMateria}" itemValue="#{materia.id}" />
                     </p:selectOneMenu>
 
-                    <p:outputLabel value="Año:" for="anio" />
+                    <p:outputLabel value="    Año:    " for="anio" />
                     <p:inputText id="anio" value="#{inscripcionController.anio}" styleClass="single-line-input" />
 
-                    <p:outputLabel value="Ciclo:" for="ciclo" />
+                    <p:outputLabel value="    Ciclo:    " for="ciclo" />
                     <p:inputText id="ciclo" value="#{inscripcionController.ciclo}" styleClass="single-line-input" />
 
                     <p:commandButton value="Guardar" action="#{inscripcionController.guardarInscripcion}"
-                                     update=":tablaInscripciones" />
+                                     update="tablaInscripciones" />
                 </h:form>
             </p:card>
         </div>

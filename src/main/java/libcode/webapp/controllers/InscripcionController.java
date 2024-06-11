@@ -59,7 +59,7 @@ public class InscripcionController {
         inscripcion.setFecha(fechaActual);
 
         servicioInscripcion.guardarInscripcion(inscripcion);
-        listaInscripciones = servicioInscripcion.buscarInscripciones(); 
+        servicioInscripcion.buscarInscripciones();
     }
 
     // Getters and Setters
@@ -118,4 +118,5 @@ public class InscripcionController {
     public void setListaInscripciones(List<Inscripcion> listaInscripciones) {
         this.listaInscripciones = listaInscripciones;
     }
+
 }
