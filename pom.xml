@@ -8,7 +8,11 @@
     <name>Parcial2_DAW-1.0</name>
     
     <properties>
+        <maven.compiler.source>17</maven.compiler.source> 
+        <maven.compiler.target>17</maven.compiler.target>
+        <endorsed.dir> ${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <failOnMissingWebXml>false</failOnMissingWebXml>
         <jakartaee>10.0.0</jakartaee>
     </properties>
     
@@ -19,6 +23,13 @@
             <version>${jakartaee}</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.primefaces</groupId>
+            <artifactId>primefaces</artifactId>
+            <version>13.0.1</version>
+            <classifier>jakarta</classifier>
+        </dependency>
+ 
     </dependencies>
     
     <build>

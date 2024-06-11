@@ -1,4 +1,11 @@
 libcode\webapp\entidades\Alumno.class
+libcode\webapp\controllers\IndexController.class
 libcode\webapp\negocio\DataService.class
+libcode\webapp\negocio\DataServiceMateria.class
 libcode\webapp\resources\App.class
+libcode\webapp\entidades\Inscripcion.class
+libcode\webapp\entidades\Materia.class
+libcode\webapp\controllers\MateriaController.class
+libcode\webapp\controllers\InscripcionController.class
+libcode\webapp\negocio\DataServiceInscripcion.class
 libcode\webapp\resources\Recurso.class

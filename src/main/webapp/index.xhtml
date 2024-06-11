@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Home</title>
+    </h:head>
+
+    <h:body>
+
+        <div class="card">
+            <h:form>
+                <p:commandButton id="dynaButton" value="Menú" type="button" icon="pi pi-bars"/>
+                <p:menu overlay="true" trigger="dynaButton" my="left top" at="left bottom">
+                    <p:submenu label="Opciones">
+                        <p:menuitem value="Home" action="index.xhtml" icon="pi pi-home"/>
+                        <p:menuitem value="Alumnos" action="alumnos.xhtml" icon="pi pi-user-plus"/>
+                        <p:menuitem value="Materias" action="materias.xhtml" icon="pi pi-book"/>
+                        <p:menuitem value="Inscripciones" action="inscripcion.xhtml" icon="pi pi-calendar-plus"/>
+                    </p:submenu>
+                </p:menu>
+            </h:form>
+        </div>
+
+    </h:body>
+</html>

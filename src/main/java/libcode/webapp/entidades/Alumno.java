@@ -28,7 +28,7 @@ public class Alumno {
     private Integer id; 
     
     @Column(name = "nombre")
-    private String name;
+    private String nombre;
     
      @Column(name = "carnet")
     private String carnet;
@@ -41,12 +41,12 @@ public class Alumno {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getCarnet() {
@@ -81,16 +81,16 @@ public class Alumno {
 
     @Override
     public String toString() {
-        return "Alumno{" + "id=" + id + ", name=" + name + ", carnet=" + carnet + '}';
+        return "Alumno{" + "id=" + id + ", nombre=" + nombre + ", carnet=" + carnet + '}';
     }
 
     public Alumno(Integer id) {
         this.id = id;
     }
 
-    public Alumno(Integer id, String name, String carnet) {
+    public Alumno(Integer id, String nombre, String carnet) {
         this.id = id;
-        this.name = name;
+        this.nombre = nombre;
         this.carnet = carnet;
     }
     
@@ -98,8 +98,8 @@ public class Alumno {
        
     }
 
-    public Alumno(Integer id, String name) {
+    public Alumno(Integer id, String nombre) {
         this.id = id;
-        this.name = name;
+        this.nombre = nombre;
     }
 }
